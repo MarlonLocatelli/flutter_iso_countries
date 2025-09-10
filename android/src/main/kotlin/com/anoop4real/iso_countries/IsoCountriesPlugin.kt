@@ -62,7 +62,7 @@ class IsoCountriesPlugin : MethodCallHandler, FlutterPlugin {
 
     private fun registerWith(messenger: BinaryMessenger) {
         channel = MethodChannel(messenger, "com.anoop4real.iso_countries")
-        channel?.setMethodCallHandler(IsoCountriesPlugin())
+        channel?.setMethodCallHandler(this)
     }
 }
 
